@@ -8,6 +8,7 @@ use Validator;
 
 class Apis extends Controller{
     public function register(Request $request){
+        //Validate and register
         $validator = Validator::make($request->all(),[
             'name' => 'required',
             'email' => 'required|email',
